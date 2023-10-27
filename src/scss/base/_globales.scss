@@ -9,6 +9,9 @@ body {
     font-size: 1.6rem;
     line-height: 1.8;
     background-color: #f9d99a;
+    &.fijar-body{
+        overflow: hidden; // cuando abro imagen de la galeria no permite scroll
+    }
 }
 p {
     font-size: 2rem;

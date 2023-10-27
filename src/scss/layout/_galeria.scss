@@ -1,0 +1,64 @@
+.contenedor-galeria{
+    padding: 10rem 0;
+    
+    h3{
+        text-align: center;
+    }
+}
+
+.galeria-imagenes{
+    img{
+        height: 20rem;
+    }
+    @include grid(2, 2rem);
+
+    @include phone{
+        @include grid(3, 2rem);
+    }
+    @include tablet{
+        @include grid(4, 2rem);
+    }
+    @include desktop{
+        @include grid(6, 2rem);
+        img{
+            height: 20rem;
+            border: 2px solid $grisOscuro;
+        }
+    }
+}
+
+.overlay{  //css de apertura de imagenes
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    place-items: center;
+
+    background-color: rgb(0 0 0 / .5);
+
+    picture{
+        display: block;
+        max-width: 40rem;
+    }
+}
+
+.btn-cerrar{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: $blanco;
+    color: $negro;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+
+    &:hover{
+        cursor: pointer;
+    }
+}

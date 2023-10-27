@@ -324,6 +324,9 @@ body {
   line-height: 1.8;
   background-color: #f9d99a;
 }
+body.fijar-body {
+  overflow: hidden;
+}
 
 p {
   font-size: 2rem;
@@ -483,6 +486,9 @@ img {
   background-color: #403E3E;
 }
 
+.contenedor-servicios {
+  padding: 10rem 0 0 0;
+}
 @media (min-width: 768px) {
   .contenedor-servicios {
     display: grid;
@@ -507,4 +513,76 @@ img {
 }
 .iconos-servicios p {
   margin-bottom: 4rem;
+}
+
+.contenedor-galeria {
+  padding: 10rem 0;
+}
+.contenedor-galeria h3 {
+  text-align: center;
+}
+
+.galeria-imagenes {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.galeria-imagenes img {
+  height: 20rem;
+}
+@media (min-width: 480px) {
+  .galeria-imagenes {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .galeria-imagenes {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .galeria-imagenes {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .galeria-imagenes img {
+    height: 20rem;
+    border: 2px solid #403E3E;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.overlay picture {
+  display: block;
+  max-width: 40rem;
+}
+
+.btn-cerrar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #000000;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+.btn-cerrar:hover {
+  cursor: pointer;
 }
