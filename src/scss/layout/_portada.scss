@@ -1,0 +1,31 @@
+.menu{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/build/img/imagen_general.jpg");
+    height: 57rem;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.contenedor-menu{
+    h2{
+        font-weight: 700;
+    }
+    h2, p {
+        margin: 0;
+        color: $blanco;
+    }
+    p{
+        font-size: 2,4rem;
+        background-color: $grisOscuro;
+        display: inline-block;
+        padding: 0.2rem 1.5rem;
+        .icono-loc{
+            font-size: 3rem;
+            gap: 2rem;
+        }
+    }
+}

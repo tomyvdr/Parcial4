@@ -1,0 +1,26 @@
+.iconos-servicios{
+    background-color: $grisOscuro;
+}
+.contenedor-servicios{
+    @include tablet{
+        @include grid(3, 5rem)
+    }
+}
+
+.iconos-servicios{
+    color: $blanco;
+    text-align: center;
+    border-radius: 1.2rem;
+    border: 2px solid $negro;
+    .icono{
+        font-size: 8rem;
+        text-align: center;
+        margin-top: 4rem;
+    }
+    h3{
+        font-weight: 700;
+    }
+    p{
+        margin-bottom: 4rem;
+    }
+}
