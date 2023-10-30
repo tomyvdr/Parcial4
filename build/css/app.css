@@ -581,8 +581,66 @@ img {
   color: #000000;
   display: grid;
   place-items: center;
-  font-weight: 700;
 }
 .btn-cerrar:hover {
   cursor: pointer;
+}
+
+.contenedor-formulario {
+  display: flex;
+  gap: 2rem;
+}
+
+.formulario {
+  background-color: #403E3E;
+  padding: 2rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 1rem;
+}
+.formulario input, .formulario select {
+  width: 100%;
+}
+
+.ubicacion iframe {
+  border-radius: 1rem;
+}
+
+.footer {
+  background-color: #403E3E;
+  margin-top: 5rem;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contenedor-footer {
+  display: flex;
+  justify-content: space-around;
+  color: #ffffff;
+}
+.contenedor-footer .logo-footer {
+  color: #ffffff;
+  font-size: 3rem;
+}
+
+.icono-redes {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.icono-redes a {
+  font-size: 3.6rem;
+  color: #ffffff;
+}
+
+.navegacion-footer a {
+  color: #ffffff;
+  margin-right: 1rem;
+  font-size: 1.8rem;
+}
+.navegacion-footer a:active {
+  transition: all 2s;
 }

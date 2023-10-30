@@ -1,0 +1,20 @@
+.contenedor-formulario{
+    display: flex;
+    gap: 2rem;
+}
+
+.formulario{
+    background-color: $grisOscuro;
+    padding: 2rem;
+    @include grid(2, 1rem);
+    border-radius: 1rem;
+    input, select{
+        width: 100%;
+    }
+}
+
+.ubicacion{
+    iframe{
+        border-radius: 1rem;
+        }
+    }
