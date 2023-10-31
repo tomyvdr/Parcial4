@@ -1,8 +1,16 @@
 .iconos-servicios{
     background-color: $grisOscuro;
 }
+.container-ser{
+    h2{
+        color: $grisOscuro;
+    }
+    @include tablet{
+        margin-top: 5rem;
+    }
+}
+
 .contenedor-servicios{
-    padding: 10rem 0 0 0;
     @include tablet{
         @include grid(3, 5rem)
     }
@@ -23,5 +31,9 @@
     }
     p{
         margin-bottom: 4rem;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 2rem;
     }
 }
+

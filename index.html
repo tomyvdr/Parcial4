@@ -39,11 +39,13 @@
         </div>
         <div class="contenido-nosotros">
             <h2>¿Quienes Somos?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus non minima harum asperiores ad velit tempore et, veritatis atque accusamus debitis vitae reprehenderit consequatur ratione consequuntur ipsam est recusandae dolorum nostrum a. Minima natus voluptatibus, iure excepturi neque saepe, id necessitatibus fuga beatae architecto nihil qui aut dolor deserunt quam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora id similique ex eius facilis possimus natus itaque iusto, vitae at non odit nostrum nobis temporibus animi libero voluptatem beatae ratione quas reiciendis, unde ipsa. Accusantium iure, sit mollitia exercitationem maiores nam est ipsa ut tempore distinctio nisi fugit nemo doloremque quam obcaecati vitae officia dicta dolore, enim quis magnam. Tempora blanditiis omnis, dignissimos magnam perspiciatis at earum fugit laudantium eos.</p>
         </div>
     </section>
 
-    <section class="contenedor contenedor-servicios" id="servicios">
+    <section class="contenedor container-ser" id="servicios">
+        <h2>Servicios</h2>
+        <div class="contenedor-servicios">
             <div class="iconos-servicios comida">
                 <span class="material-symbols-outlined icono">
                     ramen_dining
@@ -64,7 +66,8 @@
                     </span>
                 <h3>Decoracion</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus possimus atque accusamus et culpa sapiente est harum animi laborum veritatis, quam rerum hic exercitationem eaque molestias. Sunt quam fugit quidem.</p>
-            </div>       
+            </div> 
+        </div>      
     </section>
 
     <section id="galeria" class="contenedor contenedor-galeria">
@@ -73,15 +76,15 @@
         </ul>
     </section>
     
-    <section class=" contenedor">
-        <h3 for="Titulo">Contacto</h3>
+    <section class="contenedor">
+        <h2 class="titulo">Contacto</h2>
         <div class="contenedor-formulario">
-            <form action="https://formspree.io/f/mwkdazaw" method="post" class="formulario">
-                <label for="nombreUsuario">Nombre:
-                    <input type="text" name="nombreUsuario" id="nombreUsuario" required>
+            <form action="https://formspree.io/f/xknlewpr" method="post" class="formulario">
+                <label for="nombreUsuario">Nombre
+                    <input type="text" name="nombreUsuario" id="nombreUsuario" placeholder="Tu nombre completo" required>
                 </label>
-                <label for="telefono">Telefono:
-                    <input type="text" name="apellidoUsuario" id="apellidoUsuario" required>
+                <label for="telefono">Telefono
+                    <input type="tel" name="telefonoUsuario" id="telefonoUsuario" placeholder="Tu Telefono" required>
                 </label>
                 <label for="email">Email 
                     <input type="email" name="email" id="email" placeholder="correo@correo.com" required>
@@ -89,10 +92,10 @@
                 <label for="fecNac">Ingrese fecha de nacimiento:
                     <input type="date" name="fecNac" id="fecNac">
                 </label>
-                <label for="comentarios">Comentarios:
+                <label for="comentarios">Comentario
                     <textarea name="comentarioUsuario" id="comentarios" cols="30" rows="10" maxlength="4" minlength="3" placeholder="Comentario"></textarea>
                 </label>
-                <input type="submit" value="enviar" id="enviar">
+                <input type="submit" value="Enviar" id="enviar" class="btn-enviar">
             </form>
             <div class="ubicacion">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3399.9788415642156!2d-63.543257416008004!3d-31.55219527847704!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1698622398964!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -105,8 +108,8 @@
             <a class="logo-footer" href="#">El cielo es el limite</a>
             <div class="icono-redes">
                 <a href="https://www.facebook.com/?locale=es_LA"><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/annabeatrizsosa/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/+5493573403323?text=Hola,%20estoy%20interesado%20en%20tu%20producto"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
             <nav class="navegacion-footer">
                 <a href="#nosotros">Nosotros</a>
@@ -114,6 +117,7 @@
                 <a href="#galeria">Galería</a>
             </nav>
         </div>
+        <p>Todos los Derechos Reservados© - Imagenes de mi autoria</p>
     </footer>
     
     <script src="build/js/app.js"></script>
